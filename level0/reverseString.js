@@ -31,7 +31,7 @@ solution("jaron");
 {
   // 문자열에 전개연산자를 사용하면 문자열을 개별 문자로 분해해 배열을 만든다
   function solution(my_string) {
-    var answer = [...my_string].reverse().join("");
+    let answer = [...my_string].reverse().join("");
     return answer;
   }
 }
@@ -42,13 +42,13 @@ solution("jaron");
 }
 {
   function solution(my_string) {
-    var my_stringArray = my_string.split(""); // 문자열을 배열로 변환
-    var answerArray = [];
-    for (var i = my_stringArray.length; i >= 0; i--) {
+    let my_stringArray = my_string.split(""); // 문자열을 배열로 변환
+    let answerArray = [];
+    for (let i = my_stringArray.length; i >= 0; i--) {
       // 배열의 길이만큼 뒤에서 부터 순환
       answerArray.push(my_stringArray[i]); // 문자열 배열의 뒷글자부터 새 배열에 뒤로 추가
     }
-    var answer = answerArray.join(""); // 배열을 문자열로 합치기
+    let answer = answerArray.join(""); // 배열을 문자열로 합치기
     return answer;
   }
 }

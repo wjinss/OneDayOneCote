@@ -31,7 +31,7 @@ function solution(array, height) {
 
 {
   function solution(array, height) {
-    var answer = 0;
+    let answer = 0;
     for (let i = 0; i < array.length; i++) {
       if (array[i] > height) {
         answer++;
@@ -60,7 +60,7 @@ function solution(array, height) {
   function solution(array, height) {
     array.push(height);
     array.sort((a, b) => a - b);
-    var answer = array.length - array.lastIndexOf(height) - 1;
+    let answer = array.length - array.lastIndexOf(height) - 1;
     return answer;
   }
 
@@ -69,7 +69,7 @@ function solution(array, height) {
 
 {
   function solution(array, height) {
-    var answer = 0;
+    let answer = 0;
     array.forEach((v) => {
       if (v > height) answer++;
     });

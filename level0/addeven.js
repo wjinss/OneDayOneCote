@@ -45,7 +45,7 @@ solution(4);
   // 첫 수와 끝 수를 더하고(n+1), 쌍을 이룬 횟수(n/2)를 곱해 2로 나누는 방식
   // 해당 풀이에선 Math.floor(n / 2)로 연속된 자연수가 아닌, 짝수의 합만 구하는 방식으로 구현
   function solution(n) {
-    var half = Math.floor(n / 2);
+    let half = Math.floor(n / 2);
     return half * (half + 1);
   }
 }
@@ -54,7 +54,7 @@ solution(4);
 // 굳이 배열을 안쓰고, 반복문을 사용해 변수를 최산화해서 풀면 더 간단
 {
   function solution(n) {
-    var answer = 0;
+    let answer = 0;
 
     for (let i = 2; i <= n; i += 2) answer += i;
 
@@ -63,7 +63,7 @@ solution(4);
 }
 {
   function solution(n) {
-    var answer = 0;
+    let answer = 0;
     for (let i = 0; i <= n; i += 2) {
       answer += i;
     }
