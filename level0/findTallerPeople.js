@@ -41,6 +41,7 @@ function solution(array, height) {
   }
 
   // 새 배열을 만들지 않고 기존 배열에서 반복문을 사용해 answer의 값을 올릴 수 있다.
+  // 기존 배열을 사용하고 변수의 값만 바꾸는 형태라 새 배열을 반환하는 코드보다 성능이 미약하지만 우수함
 }
 
 {
@@ -54,6 +55,7 @@ function solution(array, height) {
     return count;
   }
   // for...of사용
+  // 위의 반복문과 동일한 내용
 }
 
 {
