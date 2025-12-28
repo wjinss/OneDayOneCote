@@ -60,6 +60,7 @@ solution(4);
 
     return answer;
   }
+  // 반복 차례를 +2로 하면 짝수인지 확인 안해도 됨
 }
 {
   function solution(n) {
