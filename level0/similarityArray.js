@@ -72,3 +72,14 @@ function solution(s1, s2) {
   // 반복문의 다른 사용법
   // for..of문 사용
 }
+
+{
+  function solution(s1, s2) {
+    const total = s1.concat(s2);
+    const duplicate = s1.filter((item) => s2.includes(item));
+
+    const answer = duplicate.length;
+    return answer;
+  }
+  // 민지쓰 풀이
+}
