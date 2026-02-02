@@ -31,10 +31,8 @@ function solution(people, limit) {
   while (left <= right) {
     if (people[left] + people[right] <= limit) {
       left++;
-      right--;
-    } else {
-      right--;
     }
+    right--;
     answer++;
   }
   return answer;
